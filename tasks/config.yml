@@ -23,5 +23,5 @@
     state: "{{ item.value.state|default('directory') }}"
     owner: "{{ item.value.owner|default('root') }}"
     group: "{{ item.value.group|default('root') }}"
-    mode: "{{ item.value.mode|default('0644') }}"
+    mode: "{{ item.value.mode|default('0755') }}"
   with_dict: "{{ base_dir }}"
